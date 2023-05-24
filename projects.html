@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="header__container">
+				<div class="header__panel" data-mobile-menu="wrapper">
+					<!-- Menu -->
+					<div class="header__left">
+						<div class="header__overlay" data-overlay>
+							<div class="header__menu" data-menu>
+								<div class="header__wrapper">
+									<div class="header__top">
+										<div>Logo</div>
+										<button type="button" class="header__close" data-close>
+											<img src="images/icon/close.svg" alt="">
+										</button>
+									</div>
+									<nav class="nav">
+										<ul class="nav__list list-reset">
+											<li class="nav__item">
+												<a href="index.html" class="nav__link">
+													<span>home</span>
+												</a>
+											</li>
+											<li class="nav__item">
+												<a href="blog.html" class="nav__link">
+													<span>blog</span>
+												</a>
+											</li>
+											<li class="nav__item">
+												<a href="contacts.html" class="nav__link">
+													<span>contact</span>
+												</a>
+											</li>
+											<li class="nav__item">
+												<a href="projects.html" class="nav__link">
+													<span>projects</span>
+												</a>
+											</li>
+											<li class="nav__item">
+												<a href="about.html" class="nav__link">
+													<span>About us</span>
+												</a>
+											</li>
+											<li class="nav__item">
+												<a href="financing.html" class="nav__link">
+													<span>financing</span>
+												</a>
+											</li>
+										</ul>
+
+									</nav>
+									<div class="header__contact">
+										<ul class="contacts list-reset contacts--header">
+											<li class="contacts__item">
+												<div class="contacts__icon">
+													<img src="images/icon/inst.svg" alt="" width="48" height="48">
+												</div>
+												<div class="contacts__wrap">
+													<div class="contacts__name">
+														Instagram
+													</div>
+													<a href="#" class="contacts__link">lizkabarbariska</a>
+												</div>
+											</li>
+											<li class="contacts__item">
+												<div class="contacts__icon">
+													<img src="images/icon/phone.svg" alt="" width="48" height="48">
+												</div>
+												<div class="contacts__wrap">
+													<div class="contacts__name">
+														Phone
+													</div>
+													<a href="tel:+14243861565" class="contacts__link">+1 (424) 386-1565</a>
+												</div>
+											</li>
+											<li class="contacts__item">
+												<div class="contacts__icon">
+													<img src="images/icon/mail.svg" alt="" width="48" height="48">
+												</div>
+												<div class="contacts__wrap">
+													<div class="contacts__name">
+														E-Mail
+													</div>
+													<a href="mailto:info@aoghomebuilders.com" class="contacts__link">info@aoghomebuilders.com</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Logo-->
+						<a href="index.html" class="header__logo">
+							LOGO
+						</a>
+					</div>
+					<div class="header__wrap">
+						<div class="header__contacts">
+							<a href="tel:+12132524023">+1 (213) 252-4023</a>
+							<span></span>
+							<div class="header__location">los angeles</div>
+						</div>
+						<button type="button" class="b-btn b-btn--outline-white js-show-popup" data-trigger="contact-popup">
+							Leave a request
+						</button>
+						<button type="button" class="header__burger" data-burger>
+							<svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V2H0V0ZM0 6H24V8H0V6ZM24 12H12V14H24V12Z" fill="white" />
+							</svg>
+						</button>
+					</div>
+
+				</div>
+				<!-- mobile menu -->
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="project-hero" style="background-image: url('../images/projects/hero/hero.jpg')">
+				<div class="container">
+					<h2 class="project-hero__title">
+						projects
+					</h2>
+				</div>
+			</section>
+
+			<div class="projects-list">
+				<div class="container">
+					<div class="projects-list__wrapper">
+						<div class="projects-group">
+							<div class="project-item">
+								<div class="project-item__img">
+									<picture>
+										<source srcset="images/projects/list/project-1.webp 1x, images/projects/list/project-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/projects/list/project-1.jpg 1x, images/projects/list/project-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/projects/list/project-1.jpg" alt="" width="636" height="420">
+									</picture>
+								</div>
+								<div class="project-item__info">
+									<h3 class="project-item__title">
+										Pickford
+									</h3>
+									<div class="project-item__wrap">
+										<ul class="project-about list-reset">
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/total-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Total area:
+													</div>
+													<div class="project-about__meaning">
+														1600 sqft
+													</div>
+												</div>
+											</li>
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/rooms-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Rooms:
+													</div>
+													<div class="project-about__meaning">
+														3 Bedroom
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" class="project-item__link">
+											<img src="images/icon/arrow-top-right.svg" alt="" width="24" height="24">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="project-item">
+								<div class="project-item__img">
+									<picture>
+										<source srcset="images/projects/list/project-1.webp 1x, images/projects/list/project-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/projects/list/project-1.jpg 1x, images/projects/list/project-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/projects/list/project-1.jpg" alt="" width="636" height="420">
+									</picture>
+								</div>
+								<div class="project-item__info">
+									<h3 class="project-item__title">
+										Pickford
+									</h3>
+									<div class="project-item__wrap">
+										<ul class="project-about list-reset">
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/total-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Total area:
+													</div>
+													<div class="project-about__meaning">
+														1600 sqft
+													</div>
+												</div>
+											</li>
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/rooms-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Rooms:
+													</div>
+													<div class="project-about__meaning">
+														3 Bedroom
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" class="project-item__link">
+											<img src="images/icon/arrow-top-right.svg" alt="" width="24" height="24">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="projects-group">
+							<div class="project-item">
+								<div class="project-item__img">
+									<picture>
+										<source srcset="images/projects/list/project-1.webp 1x, images/projects/list/project-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/projects/list/project-1.jpg 1x, images/projects/list/project-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/projects/list/project-1.jpg" alt="" width="636" height="420">
+									</picture>
+								</div>
+								<div class="project-item__info">
+									<h3 class="project-item__title">
+										Pickford
+									</h3>
+									<div class="project-item__wrap">
+										<ul class="project-about list-reset">
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/total-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Total area:
+													</div>
+													<div class="project-about__meaning">
+														1600 sqft
+													</div>
+												</div>
+											</li>
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/rooms-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Rooms:
+													</div>
+													<div class="project-about__meaning">
+														3 Bedroom
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" class="project-item__link">
+											<img src="images/icon/arrow-top-right.svg" alt="" width="24" height="24">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="project-item">
+								<div class="project-item__img">
+									<picture>
+										<source srcset="images/projects/list/project-1.webp 1x, images/projects/list/project-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/projects/list/project-1.jpg 1x, images/projects/list/project-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/projects/list/project-1.jpg" alt="" width="636" height="420">
+									</picture>
+								</div>
+								<div class="project-item__info">
+									<h3 class="project-item__title">
+										Pickford
+									</h3>
+									<div class="project-item__wrap">
+										<ul class="project-about list-reset">
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/total-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Total area:
+													</div>
+													<div class="project-about__meaning">
+														1600 sqft
+													</div>
+												</div>
+											</li>
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/rooms-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Rooms:
+													</div>
+													<div class="project-about__meaning">
+														3 Bedroom
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" class="project-item__link">
+											<img src="images/icon/arrow-top-right.svg" alt="" width="24" height="24">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="projects-group">
+							<div class="project-item">
+								<div class="project-item__img">
+									<picture>
+										<source srcset="images/projects/list/project-1.webp 1x, images/projects/list/project-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/projects/list/project-1.jpg 1x, images/projects/list/project-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/projects/list/project-1.jpg" alt="" width="636" height="420">
+									</picture>
+								</div>
+								<div class="project-item__info">
+									<h3 class="project-item__title">
+										Pickford
+									</h3>
+									<div class="project-item__wrap">
+										<ul class="project-about list-reset">
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/total-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Total area:
+													</div>
+													<div class="project-about__meaning">
+														1600 sqft
+													</div>
+												</div>
+											</li>
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/rooms-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Rooms:
+													</div>
+													<div class="project-about__meaning">
+														3 Bedroom
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" class="project-item__link">
+											<img src="images/icon/arrow-top-right.svg" alt="" width="24" height="24">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="project-item">
+								<div class="project-item__img">
+									<picture>
+										<source srcset="images/projects/list/project-1.webp 1x, images/projects/list/project-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/projects/list/project-1.jpg 1x, images/projects/list/project-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/projects/list/project-1.jpg" alt="" width="636" height="420">
+									</picture>
+								</div>
+								<div class="project-item__info">
+									<h3 class="project-item__title">
+										Pickford
+									</h3>
+									<div class="project-item__wrap">
+										<ul class="project-about list-reset">
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/total-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Total area:
+													</div>
+													<div class="project-about__meaning">
+														1600 sqft
+													</div>
+												</div>
+											</li>
+											<li class="project-about__item">
+												<div class="project-about__icon">
+													<img src="images/icon/rooms-icon.svg" alt="" width="48" height="48">
+												</div>
+												<div class="project-about__wrap">
+													<div class="project-about__name">
+														Rooms:
+													</div>
+													<div class="project-about__meaning">
+														3 Bedroom
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" class="project-item__link">
+											<img src="images/icon/arrow-top-right.svg" alt="" width="24" height="24">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__top">
+					<a href="#" class="logo">Logo</a>
+					<ul class="contacts list-reset contacts--footer">
+						<li class="contacts__item">
+							<div class="contacts__icon">
+								<img src="images/icon/inst.svg" alt="" width="48" height="48">
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									Instagram
+								</div>
+								<a href="#" class="contacts__link">lizkabarbariska</a>
+							</div>
+						</li>
+						<li class="contacts__item">
+							<div class="contacts__icon">
+								<img src="images/icon/phone.svg" alt="" width="48" height="48">
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									Phone
+								</div>
+								<a href="tel:+14243861565" class="contacts__link">+1 (424) 386-1565</a>
+							</div>
+						</li>
+						<li class="contacts__item">
+							<div class="contacts__icon">
+								<img src="images/icon/mail.svg" alt="" width="48" height="48">
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									E-Mail
+								</div>
+								<a href="mailto:info@aoghomebuilders.com" class="contacts__link">info@aoghomebuilders.com</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<nav class="nav nav--footer">
+						<ul class="nav__list list-reset">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link">
+									<span>home</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link">
+									<span>blog</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="nav__link">
+									<span>contact</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="projects.html" class="nav__link">
+									<span>projects</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="team.html" class="nav__link">
+									<span>Team</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__wrap">
+						<a href="#" class="footer__link">
+							Privacy
+						</a>
+						<div class="footer__address">
+							Address: 13535 Ventura Blvd, Suit C, ShermanCA 91423
+						</div>
+						<a href="#" class="footer__link">
+							Made in rhino
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="overlay js-overlay"></div>
+	<div class="popup popup--process js-popup" data-popup="process-popup-1">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="16" cy="16" r="16" fill="#F2EFE4" />
+				<path d="M20.7138 20.714L11.2857 11.2859" stroke="#1C1C1C" stroke-linecap="square" />
+				<path d="M20.7143 11.2859L11.2862 20.714" stroke="#1C1C1C" stroke-linecap="square" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="popup-process">
+				<div class="popup-process__img">
+					<picture>
+						<source srcset="images/home/process/process-1.webp 1x, images/home/process/process-1@2x.webp 1.3x" type="image/webp">
+						<source srcset="images/home/process/process-1.jpg 1x, images/home/process/process-1@2x.jpg 1.3x" type="image/jpg">
+						<img src="images/home/process/process-1.jpg" alt="" width="582" height="264">
+					</picture>
+				</div>
+				<div class="popup-process__wrap">
+					<h3 class="popup-process__title">
+						Feasability
+					</h3>
+					<div class="popup-process__text">
+						<p>
+							Share your vision and goals. Send us all the available project information: property
+							information, design ideas, mood boards, material selection and descriptions. Based on your
+							vision and requests, we will propose the right solution for you and prepare a proforma for you
+							to see if its a right investment for your. Our team understands both the design and thebusiness
+							objectives.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--process js-popup" data-popup="process-popup-2">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="16" cy="16" r="16" fill="#F2EFE4" />
+				<path d="M20.7138 20.714L11.2857 11.2859" stroke="#1C1C1C" stroke-linecap="square" />
+				<path d="M20.7143 11.2859L11.2862 20.714" stroke="#1C1C1C" stroke-linecap="square" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="popup-process">
+				<div class="popup-process__img">
+					<picture>
+						<source srcset="images/home/process/process-2.webp 1x, images/home/process/process-2@2x.webp 1.3x" type="image/webp">
+						<source srcset="images/home/process/process-2.jpg 1x, images/home/process/process-2@2x.jpg 1.3x" type="image/jpg">
+						<img src="images/home/process/process-2.jpg" alt="" width="582" height="264">
+					</picture>
+				</div>
+				<div class="popup-process__wrap">
+					<h3 class="popup-process__title">
+						Design
+					</h3>
+					<div class="popup-process__text">
+						<p>
+							We prepare a design based on provided ideas and local regulations that will be approved by the
+							city. If necessary, we
+							implement up to 3 revisions, making sure all your comments are
+							applied and your requirements are thoroughly followed.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--process js-popup" data-popup="process-popup-3">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="16" cy="16" r="16" fill="#F2EFE4" />
+				<path d="M20.7138 20.714L11.2857 11.2859" stroke="#1C1C1C" stroke-linecap="square" />
+				<path d="M20.7143 11.2859L11.2862 20.714" stroke="#1C1C1C" stroke-linecap="square" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="popup-process">
+				<div class="popup-process__img">
+					<picture>
+						<source srcset="images/home/process/process-3.webp 1x, images/home/process/process-3@2x.webp 1.3x" type="image/webp">
+						<source srcset="images/home/process/process-3.jpg 1x, images/home/process/process-3@2x.jpg 1.3x" type="image/jpg">
+						<img src="images/home/process/process-3.jpg" alt="" width="582" height="264">
+					</picture>
+				</div>
+				<div class="popup-process__wrap">
+					<h3 class="popup-process__title">
+						Permitting
+					</h3>
+					<div class="popup-process__text">
+						<p>
+							We submit the full set of plans on your behalf to the city
+							and get the permit issued by Building and Safety Department.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--process js-popup" data-popup="process-popup-4">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="16" cy="16" r="16" fill="#F2EFE4" />
+				<path d="M20.7138 20.714L11.2857 11.2859" stroke="#1C1C1C" stroke-linecap="square" />
+				<path d="M20.7143 11.2859L11.2862 20.714" stroke="#1C1C1C" stroke-linecap="square" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="popup-process">
+				<div class="popup-process__img">
+					<picture>
+						<source srcset="images/home/process/process-4.webp 1x, images/home/process/process-4@2x.webp 1.3x" type="image/webp">
+						<source srcset="images/home/process/process-4.jpg 1x, images/home/process/process-4@2x.jpg 1.3x" type="image/jpg">
+						<img src="images/home/process/process-4.jpg" alt="" width="582" height="264">
+					</picture>
+				</div>
+				<div class="popup-process__wrap">
+					<h3 class="popup-process__title">
+						Build
+					</h3>
+					<div class="popup-process__text">
+						<p>
+							Once the permit is issued, we will start on construction.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--founder js-popup" data-popup="founder-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="16" cy="16" r="16" fill="#F2EFE4" />
+				<path d="M20.7138 20.714L11.2857 11.2859" stroke="#1C1C1C" stroke-linecap="square" />
+				<path d="M20.7143 11.2859L11.2862 20.714" stroke="#1C1C1C" stroke-linecap="square" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="popup-founder">
+				<h3 class="popup-founder__title">
+					About Angelina
+				</h3>
+				<div class="popup-founder__text">
+					<p>
+						Angelina Gorbaseva is the founder and CEO of AOG Home Builders Inc. Throughout her career, she has
+						renovated and built several custom homes as well as built over 50 ADUs from ground up in Southern
+						California.
+					</p>
+					<p>
+						She started AOG Home Builders when she realized there was a glaring gap in the construction and
+						remodeling space. “A lot of my friends and family who were [embarking on home construction projects
+						would complain about their experiences and I realized the relationship between a traditional
+						contractor land homeowner was outdated”. As a result, Angelina established a company that would not
+						only bridge this gap but one that would excel beyond the highest levels of professionalism and
+						integrity in the industry. Under her leadership, the company has continued to grow and evolve into
+						one of the largest design+build companies in Southern California.
+					</p>
+					<p>
+						Angelina was born and raised in Rostov-on-Don,Russia and moved to Los Angeles in 2013 to pursue her
+						education in Business.
+					</p>
+					<p>
+						She is an avid tennis player. She believes that her true competitive nature and passion for
+						innovation makes her one of the best at what she does. When Angelina isn't at work she's spending
+						time with her family, traveling, playing tennis, hiking and considers herself a true foodie.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--contact js-popup" data-popup="contact-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="16" cy="16" r="16" fill="#F2EFE4" />
+				<path d="M20.7138 20.714L11.2857 11.2859" stroke="#1C1C1C" stroke-linecap="square" />
+				<path d="M20.7143 11.2859L11.2862 20.714" stroke="#1C1C1C" stroke-linecap="square" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="popup-contact">
+				<div class="popup-contact__img">
+					<picture>
+						<source srcset="images/home/feedback/feedback.webp 1x, images/home/feedback/feedback@2x.webp 1.3x" type="image/webp">
+						<source srcset="images/home/feedback/feedback.png 1x, images/home/feedback/feedback@2x.png 1.3x" type="image/png">
+						<img src="images/home/feedback/feedback.png" alt="" width="372" height="323">
+					</picture>
+				</div>
+				<div class="popup-contact__form">
+					<div class="popup-contact__wrap">
+						<h3 class="popup-contact__title">
+							Contact us
+						</h3>
+						<div class="popup-contact__text">
+							<p>
+								Send your building design
+								and we will contact you shortly
+							</p>
+						</div>
+					</div>
+					<form action="#" class="form form--feedback" id="modal-feedback">
+						<div class="form__row">
+							<div class="form__wrap">
+								<label for="modal-feedback-name" class="form__label">
+									<input type="text" class="form__input" id="modal-feedback-name" name="modal-feedback-name">
+									<span class="form__name">Name</span>
+								</label>
+							</div>
+							<div class="form__error">Please write your name</div>
+						</div>
+						<div class="form__row">
+							<div class="form__wrap">
+								<label for="modal-feedback-phone" class="form__label">
+									<input type="text" class="form__input" id="modal-feedback-phone">
+									<span class="form__name">Phone</span>
+								</label>
+							</div>
+							<div class="form__error">Please write your Phone</div>
+						</div>
+						<div class="form__row">
+							<div class="form__wrap">
+								<label for="modal-feedback-mail" class="form__label">
+									<input type="text" class="form__input" id="modal-feedback-mail">
+									<span class="form__name">Email</span>
+								</label>
+							</div>
+							<div class="form__error">Please write your Email</div>
+						</div>
+						<div class="form__row">
+							<div class="form__wrap">
+								<label for="modal-feedback-code" class="form__label">
+									<input type="text" class="form__input" id="modal-feedback-code">
+									<span class="form__name">Zip code</span>
+								</label>
+							</div>
+							<div class="form__error">Please write your Code</div>
+						</div>
+						<button type="button" class="b-btn b-btn--black">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
