@@ -23,25 +23,30 @@ const inputAnimate = () => {
 /* harmony default export */ const inputAnim = (inputAnimate);
 ;// CONCATENATED MODULE: ./source/js/components/accodrion.js
 const accordion = () => {
-  const accordions = document.querySelectorAll('.services-item'); // находим все аккардионы
+  const accordions = document.querySelectorAll('.services-item');
+  let activeAccordion = null;
   accordions.forEach(el => {
     el.addEventListener('click', e => {
       const self = e.currentTarget;
       const control = self.querySelector('.services-item__control'); //
       const content = self.querySelector('.services-item__content'); // то что будем открывать
 
-      self.classList.toggle('open');
-
-      // если открыт аккордеон
-      if (self.classList.contains('open')) {
-        control.setAttribute('aria-expanded', true);
-        content.setAttribute('aria-hidden', false);
-        content.style.maxHeight = `${content.scrollHeight}px`;
-      } else {
-        control.setAttribute('aria-expanded', false);
-        content.setAttribute('aria-hidden', true);
-        content.style.maxHeight = null;
+      if (self === activeAccordion) {
+        return;
       }
+      if (activeAccordion) {
+        const activeControl = activeAccordion.querySelector('.services-item__control');
+        const activeContent = activeAccordion.querySelector('.services-item__content');
+        activeAccordion.classList.remove('open');
+        activeControl.setAttribute('aria-expanded', false);
+        activeContent.setAttribute('aria-hidden', true);
+        activeContent.style.maxHeight = null;
+      }
+      self.classList.add('open');
+      control.setAttribute('aria-expanded', true);
+      content.setAttribute('aria-hidden', false);
+      content.style.maxHeight = `${content.scrollHeight}px`;
+      activeAccordion = self;
     });
   });
 };
